@@ -23,23 +23,12 @@
             <div class="navigate-group">组件</div>
             <Menu-group v-for="item in navigate.components" :key="item.type" :title="item.type">
                 <Menu-item v-for="component in item.list" :key="component.path" :name="component.path">
-                    <i class="ivu-icon" :class="'ivu-icon-' + component.icon"></i>
                     <template>
                         {{ component.title.split(' ')[0] }}
                         <span class="navigate-group-span">{{ component.title.split(' ')[1] }}</span>
                     </template>
                 </Menu-item>
             </Menu-group>
-        </Menu>
-        <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'practice'">
-            <Menu-item v-for="item in navigate.practice" :key="item.path" :name="item.path">
-                {{ item.title }}
-            </Menu-item>
-        </Menu>
-        <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'live'">
-            <Menu-item v-for="item in navigate.live" :key="item.path" :name="item.path">
-                {{ item.title }}
-            </Menu-item>
         </Menu>
     </div>
 </template>
