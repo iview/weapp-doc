@@ -227,6 +227,13 @@ const routers = [
         component: (resolve) => require(['./views/components/rate.vue'], resolve)
     },
     {
+        path: '/components/input-number',
+        meta: {
+            title: '数字输入框 InputNumber'
+        },
+        component: (resolve) => require(['./views/components/input-number.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
