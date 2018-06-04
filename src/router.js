@@ -45,6 +45,13 @@ const routers = [
         component: (resolve) => require(['./views/components/panel.vue'], resolve)
     },
     {
+        path: '/components/list',
+        meta: {
+            title: '列表 List'
+        },
+        component: (resolve) => require(['./views/components/list.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
