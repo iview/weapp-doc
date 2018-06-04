@@ -66,6 +66,13 @@ const routers = [
         component: (resolve) => require(['./views/components/button.vue'], resolve)
     },
     {
+        path: '/components/color',
+        meta: {
+            title: '色彩 Color'
+        },
+        component: (resolve) => require(['./views/components/color.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
