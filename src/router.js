@@ -171,6 +171,13 @@ const routers = [
         component: (resolve) => require(['./views/components/alert.vue'], resolve)
     },
     {
+        path: '/components/tag',
+        meta: {
+            title: '标签 Tag'
+        },
+        component: (resolve) => require(['./views/components/tag.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
