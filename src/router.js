@@ -143,6 +143,13 @@ const routers = [
         component: (resolve) => require(['./views/components/modal.vue'], resolve)
     },
     {
+        path: '/components/message',
+        meta: {
+            title: '全局提醒 Message'
+        },
+        component: (resolve) => require(['./views/components/message.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
