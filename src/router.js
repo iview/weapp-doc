@@ -129,6 +129,13 @@ const routers = [
         component: (resolve) => require(['./views/components/action-sheet.vue'], resolve)
     },
     {
+        path: '/components/toast',
+        meta: {
+            title: '轻提示 Toast'
+        },
+        component: (resolve) => require(['./views/components/toast.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
