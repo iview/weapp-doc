@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="false">
         <!--<div class="advertisement" id="API">-->
             <!--<row :gutter="32">-->
                 <!--<i-col span="12">-->
