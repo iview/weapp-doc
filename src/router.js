@@ -31,6 +31,13 @@ const routers = [
         component: (resolve) => require(['./views/components/layout.vue'], resolve)
     },
     {
+        path: '/components/grid',
+        meta: {
+            title: '宫格 Grid'
+        },
+        component: (resolve) => require(['./views/components/grid.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }

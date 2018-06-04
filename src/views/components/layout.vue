@@ -21,7 +21,7 @@
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
-                <Anchor title="Row props" h3></Anchor>
+                <Anchor title="Row properties" h3></Anchor>
                 <table>
                     <thead>
                         <tr>
@@ -40,7 +40,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Col props" h3></Anchor>
+                <Anchor title="Col properties" h3></Anchor>
                 <table>
                     <thead>
                         <tr>
