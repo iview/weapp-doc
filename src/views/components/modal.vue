@@ -1,9 +1,9 @@
 <template>
     <i-article>
         <article>
-            <h1>ActionSheet 动作面板</h1>
+            <h1>Modal 对话框</h1>
             <Anchor title="概述" h2></Anchor>
-            <p>从底部弹出的模态框，提供和当前场景相关的 2 个以上的操作动作，也支持提供标题和描述。内置固定的展示样式、不支持特别灵活的修改。</p>
+            <p>模态对话框，在浮层中显示，引导用户进行相关操作。</p>
             <Anchor title="使用指南" h2></Anchor>
             <p>在 .json 中引入组件</p>
             <i-code bg lang="json">{{ code.import }}</i-code>
@@ -15,7 +15,7 @@
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
-                <Anchor title="ActionSheet properties" h3></Anchor>
+                <Anchor title="Modal properties" h3></Anchor>
                 <table>
                     <thead>
                         <tr>
@@ -27,32 +27,20 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>i-class</td>
-                            <td>自定义 class 类名</td>
-                            <td>String</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>i-class-mask</td>
-                            <td>自定义 遮罩层 类名</td>
-                            <td>String</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>i-class-header</td>
-                            <td>自定义 标题栏 类名</td>
-                            <td>String</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
                             <td>visible</td>
                             <td>是否显示组件</td>
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
                         <tr>
-                            <td>mask-closable</td>
-                            <td>点击遮罩层是否可以关闭组件</td>
+                            <td>title</td>
+                            <td>标题</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>show-ok</td>
+                            <td>是否显示确定按钮</td>
                             <td>Boolean</td>
                             <td>true</td>
                         </tr>
@@ -60,7 +48,13 @@
                             <td>show-cancel</td>
                             <td>是否显示取消按钮</td>
                             <td>Boolean</td>
-                            <td>false</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td>ok-text</td>
+                            <td>确定按钮的文案</td>
+                            <td>String</td>
+                            <td>确定</td>
                         </tr>
                         <tr>
                             <td>cancel-text</td>
@@ -70,13 +64,19 @@
                         </tr>
                         <tr>
                             <td>actions</td>
-                            <td>按钮组，具体项参照后面的表格</td>
+                            <td>按钮组，具体项参照后面的表格，设置此值后，则默认的确定和取消按钮不予显示</td>
                             <td>Array</td>
                             <td>[]</td>
                         </tr>
+                        <tr>
+                            <td>action-mode</td>
+                            <td>按钮的排列方向，可选值为 horizontal 或 vertical</td>
+                            <td>String</td>
+                            <td>horizontal</td>
+                        </tr>
                     </tbody>
                 </table>
-                <Anchor title="ActionSheet events" h3></Anchor>
+                <Anchor title="Modal events" h3></Anchor>
                 <table>
                     <thead>
                     <tr>
@@ -92,28 +92,18 @@
                         <td>{ index }</td>
                     </tr>
                     <tr>
+                        <td>bind:ok</td>
+                        <td>点击确定按钮时触发</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
                         <td>bind:cancel</td>
-                        <td>点击关闭或遮罩层时触发</td>
+                        <td>点击取消按钮时触发</td>
                         <td>-</td>
                     </tr>
                     </tbody>
                 </table>
-                <Anchor title="ActionSheet slot" h3></Anchor>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>名称</th>
-                        <th>说明</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>header</td>
-                        <td>标题栏，可以添加提示信息</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <Anchor title="ActionSheet actions" h3></Anchor>
+                <Anchor title="Modal actions" h3></Anchor>
                 <table>
                     <thead>
                     <tr>
@@ -148,12 +138,6 @@
                         <td>Boolean</td>
                         <td>false</td>
                     </tr>
-                    <tr>
-                        <td>openType</td>
-                        <td>按钮的微信开放能力</td>
-                        <td>String</td>
-                        <td>-</td>
-                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -164,7 +148,7 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
-    import Code from '../../code/action-sheet';
+    import Code from '../../code/modal';
     import Anchor from '../../components/anchor.vue';
 
     export default {

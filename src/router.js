@@ -136,6 +136,13 @@ const routers = [
         component: (resolve) => require(['./views/components/toast.vue'], resolve)
     },
     {
+        path: '/components/modal',
+        meta: {
+            title: '对话框 Modal'
+        },
+        component: (resolve) => require(['./views/components/modal.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
