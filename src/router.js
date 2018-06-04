@@ -94,6 +94,13 @@ const routers = [
         component: (resolve) => require(['./views/components/tabs.vue'], resolve)
     },
     {
+        path: '/components/drawer',
+        meta: {
+            title: '抽屉 Drawer'
+        },
+        component: (resolve) => require(['./views/components/drawer.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
