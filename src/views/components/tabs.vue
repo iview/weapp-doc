@@ -1,9 +1,9 @@
 <template>
     <i-article>
         <article>
-            <h1>TabBar 面板</h1>
+            <h1>Tabs 标签页</h1>
             <Anchor title="概述" h2></Anchor>
-            <p>位于 APP 底部，方便用户在不同功能模块之间进行快速切换。</p>
+            <p>用于让用户在不同的视图中进行切换。</p>
             <Anchor title="使用指南" h2></Anchor>
             <p>在 .json 中引入组件</p>
             <i-code bg lang="json">{{ code.import }}</i-code>
@@ -15,7 +15,7 @@
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
-                <Anchor title="TabBar properties" h3></Anchor>
+                <Anchor title="Tabs properties" h3></Anchor>
                 <table>
                     <thead>
                         <tr>
@@ -45,6 +45,12 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>scroll</td>
+                            <td>是否开启横向滚动</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
                             <td>fixed</td>
                             <td>是否固定在底部</td>
                             <td>Boolean</td>
@@ -52,7 +58,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="TabBar events" h3></Anchor>
+                <Anchor title="Tabs events" h3></Anchor>
                 <table>
                     <thead>
                     <tr>
@@ -69,7 +75,7 @@
                     </tr>
                     </tbody>
                 </table>
-                <Anchor title="TabBarItem properties" h3></Anchor>
+                <Anchor title="Tab properties" h3></Anchor>
                 <table>
                     <thead>
                     <tr>
@@ -83,18 +89,6 @@
                     <tr>
                         <td>i-class</td>
                         <td>自定义 class 类名</td>
-                        <td>String</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>icon</td>
-                        <td>图标</td>
-                        <td>String</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>current-icon</td>
-                        <td>当前面板被选中时的图标</td>
                         <td>String</td>
                         <td>-</td>
                     </tr>
@@ -132,7 +126,7 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
-    import Code from '../../code/tab-bar';
+    import Code from '../../code/tabs';
     import Anchor from '../../components/anchor.vue';
 
     export default {

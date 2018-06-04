@@ -87,6 +87,13 @@ const routers = [
         component: (resolve) => require(['./views/components/tab-bar.vue'], resolve)
     },
     {
+        path: '/components/tabs',
+        meta: {
+            title: '标签页 Tabs'
+        },
+        component: (resolve) => require(['./views/components/tabs.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
