@@ -73,6 +73,13 @@ const routers = [
         component: (resolve) => require(['./views/components/color.vue'], resolve)
     },
     {
+        path: '/components/icon',
+        meta: {
+            title: '图标 Icon'
+        },
+        component: (resolve) => require(['./views/components/icon.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
