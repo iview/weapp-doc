@@ -108,6 +108,13 @@ const routers = [
         component: (resolve) => require(['./views/components/page.vue'], resolve)
     },
     {
+        path: '/components/steps',
+        meta: {
+            title: '步骤条 Steps'
+        },
+        component: (resolve) => require(['./views/components/steps.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
