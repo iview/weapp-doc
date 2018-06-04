@@ -115,6 +115,13 @@ const routers = [
         component: (resolve) => require(['./views/components/steps.vue'], resolve)
     },
     {
+        path: '/components/notice-bar',
+        meta: {
+            title: '通告栏 NoticeBar'
+        },
+        component: (resolve) => require(['./views/components/notice-bar.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
