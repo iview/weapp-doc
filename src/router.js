@@ -38,6 +38,13 @@ const routers = [
         component: (resolve) => require(['./views/components/grid.vue'], resolve)
     },
     {
+        path: '/components/panel',
+        meta: {
+            title: '面板 Panel'
+        },
+        component: (resolve) => require(['./views/components/panel.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
