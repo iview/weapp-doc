@@ -150,6 +150,13 @@ const routers = [
         component: (resolve) => require(['./views/components/message.vue'], resolve)
     },
     {
+        path: '/components/spin',
+        meta: {
+            title: '加载中 Spin'
+        },
+        component: (resolve) => require(['./views/components/spin.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
