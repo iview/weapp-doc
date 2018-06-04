@@ -80,6 +80,13 @@ const routers = [
         component: (resolve) => require(['./views/components/icon.vue'], resolve)
     },
     {
+        path: '/components/tab-bar',
+        meta: {
+            title: '标签栏 TabBar'
+        },
+        component: (resolve) => require(['./views/components/tab-bar.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
