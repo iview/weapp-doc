@@ -1,0 +1,138 @@
+.index{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    text-align: center;
+    overflow: hidden;
+
+    h1{
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .img-logo{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 18px;
+        }
+        .img-name{
+            width: 175px;
+            height: 66px;
+            position: relative;
+        }
+    }
+    h2{
+        color: #0099fb;
+        font-weight: normal;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .list{
+        margin: 10px 0 200px;
+        &-a a{
+            color: #0099fb;
+            font-size: 16px;
+            display: inline-block;
+            padding: 10px;
+            position: relative;
+            transition: color 0.3s;
+            &:before, &:after{
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: #2d8cf0;
+                content: '';
+                opacity: 0;
+                transition: opacity 0.3s, transform 0.3s;
+                transform: translateY(-10px);
+            }
+            &:before{
+                top: 0;
+                transform: translateY(-10px);
+            }
+            &:after{
+                bottom: 0;
+                transform: translateY(10px);
+            }
+
+            &:hover{
+                color: #2b85e4;
+            }
+            &:hover::before,&:hover::after{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+    .ivu-row-flex{
+        height: 100%;
+    }
+    &-lang{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 301;
+        & span{
+            display: inline-block;
+            color: #2d8cf0;
+            cursor: pointer;
+        }
+    }
+}
+
+#indexLizi{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#barrage{
+    position: absolute !important;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 500;
+    pointer-events: none;
+}
+.bg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    text-align: center;
+    background-color: #fff;
+    background-image: url("../images/birthday-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.index-card{
+    width: 200px;
+    margin: 50px auto 0;
+    position: relative;
+    //opacity: 0.6;
+    //transition: all .2s ease-in-out;
+    &:hover{
+        //opacity: 1;
+    }
+    img{
+        width: 100%;
+    }
+    &-play{
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    }
+}

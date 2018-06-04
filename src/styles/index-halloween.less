@@ -1,0 +1,112 @@
+.index{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #141a48;
+    background-image: url("../images/bg-new.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    h1{
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .img-logo{
+            width: 90px;
+            height: 90px;
+        }
+        .img-name{
+            width: 90px;
+            height: 40px;
+            position: relative;
+            left: 0;
+        }
+    }
+    h2{
+        color: rgba(255,255,255,.85);
+        font-weight: normal;
+        margin-top: 50px;
+        font-size: 18px;
+        text-shadow: 0 0 10px #fff,
+        0 0 20px  #fff,
+        0 0 30px  #fff,
+        0 0 40px  #FF9900,
+        0 0 70px  #FF9900,
+        0 0 80px  #FF9900,
+        0 0 100px #FF9900,
+        0 0 150px #FF9900;
+    }
+    .list{
+        margin: 40px 0 200px;
+        a{
+            color: rgba(255,255,255,.85);
+            font-size: 18px;
+            display: inline-block;
+            padding: 10px 12px;
+            position: relative;
+            transition: color 0.3s;
+            text-shadow: 0 0 10px #fff,
+            0 0 20px  #fff,
+            0 0 30px  #fff,
+            0 0 40px  #FF9900,
+            0 0 70px  #FF9900,
+            0 0 80px  #FF9900,
+            0 0 100px #FF9900,
+            0 0 150px #FF9900;
+            &:before, &:after{
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: #fff;
+                content: '';
+                opacity: 0;
+                transition: opacity 0.3s, transform 0.3s;
+                transform: translateY(-10px);
+            }
+            &:before{
+                top: 0;
+                transform: translateY(-10px);
+            }
+            &:after{
+                bottom: 0;
+                transform: translateY(10px);
+            }
+
+            &:hover{
+                color: #fff
+            }
+            &:hover::before,&:hover::after{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+    .ivu-row-flex{
+        height: 100%;
+    }
+    &-lang{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+        & span{
+            display: inline-block;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+#indexLizi{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}

@@ -1,0 +1,183 @@
+<template>
+    <Modal v-model="currentVisible" title="常见的日期和时间格式">
+        <div class="api">
+            <table>
+                <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>说明</th>
+                    <th>示例</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>yyyy</td>
+                    <td>年份（四位）</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>yy</td>
+                    <td>年份（两位）</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>MM</td>
+                    <td>月份（两位）</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>月份（一位）</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>MMMM</td>
+                    <td>月份（英文）</td>
+                    <td>January</td>
+                </tr>
+                <tr>
+                    <td>MMM</td>
+                    <td>月份（英文简写）</td>
+                    <td>Jan</td>
+                </tr>
+                <tr>
+                    <td>dd</td>
+                    <td>日期（两位）</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td>日期（一位）</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Do</td>
+                    <td>日期（简写）</td>
+                    <td>1st</td>
+                </tr>
+                <tr>
+                    <td>DD</td>
+                    <td>星期（两位）</td>
+                    <td>00</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>星期（一位）</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>dddd</td>
+                    <td>星期（英文）</td>
+                    <td>Monday</td>
+                </tr>
+                <tr>
+                    <td>ddd</td>
+                    <td>星期（英文简写）</td>
+                    <td>Mon</td>
+                </tr>
+                <tr>
+                    <td>HH</td>
+                    <td>小时（24小时制两位）</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                    <td>小时（24小时制一位）</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>hh</td>
+                    <td>小时（12小时制两位）</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>h</td>
+                    <td>小时（12小时制一位）</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>mm</td>
+                    <td>分钟（两位）</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>m</td>
+                    <td>分钟（一位）</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>ss</td>
+                    <td>秒钟（两位）</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>s</td>
+                    <td>秒钟（一位）</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>SSS</td>
+                    <td>毫秒（三位）</td>
+                    <td>019</td>
+                </tr>
+                <tr>
+                    <td>SS</td>
+                    <td>毫秒（两位）</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>毫秒（一位）</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>上午与下午（大写）</td>
+                    <td>AM/PM</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>上午与下午（小写）</td>
+                    <td>am/pm</td>
+                </tr>
+                <tr>
+                    <td>ZZ</td>
+                    <td>时区</td>
+                    <td>+0800</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="ivu-article demo-date-type">
+            <p>以上是 iView 支持的日期格式，你可以自由组合出你需要的类型，例如：</p>
+            <ul>
+                <li><strong>yyyy年M月d日</strong>：2016年1月1日</li>
+                <li><strong>MM/dd/yy</strong>：12/24/16</li>
+                <li><strong>H点m分s秒</strong>：9点41分0秒</li>
+            </ul>
+        </div>
+    </Modal>
+</template>
+<script>
+    export default {
+        props: {
+            value: {
+                type: Boolean,
+                default: false
+            }
+        },
+        data () {
+            return {
+                currentVisible: this.value
+            }
+        },
+        watch: {
+            value (val) {
+                this.currentVisible = val;
+            },
+            currentVisible (val) {
+                this.$emit('input', val);
+            }
+        }
+    };
+</script>
