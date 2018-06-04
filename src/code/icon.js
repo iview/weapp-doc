@@ -6,7 +6,7 @@ code.import = `
 }
 `;
 code.usage = `
-<i-icon type="activity" size="28" color="#80848f"></i-icon>
+<i-icon type="activity" size="28" color="#80848f" />
 `;
 
 export default code;
