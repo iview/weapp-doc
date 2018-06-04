@@ -9,7 +9,7 @@ util.alert = function(content) {
 };
 
 util.title = function (title) {
-    title = title ? title + ' - iView' : 'iView - A high quality UI Toolkit based on Vue.js';
+    title = title ? title + ' - iView Weapp' : 'iView Weapp - 一套高质量的微信小程序 UI 组件库';
     window.document.title = title;
 };
 const SPECIAL_CHARS_REGEXP = /([\:\-\_]+(.))/g;
