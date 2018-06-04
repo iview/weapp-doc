@@ -185,6 +185,13 @@ const routers = [
         component: (resolve) => require(['./views/components/progress.vue'], resolve)
     },
     {
+        path: '/components/avatar',
+        meta: {
+            title: '头像 Avatar'
+        },
+        component: (resolve) => require(['./views/components/avatar.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
