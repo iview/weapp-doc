@@ -39,6 +39,10 @@
 
                             <template>
                                 <div style="margin-top: 20px"></div>
+                                <div class="article-qrcode">
+                                    <img src="../images/code.jpg">
+                                    <span>微信扫描体验</span>
+                                </div>
                                 <!--<a v-if="ad_index === 1" href="https://cn.udacity.com/course/intro-to-python-nanodegree-foundation&#45;&#45;nd000-cn-python/?utm_source=iviewui&utm_medium=banner&utm_campaign=python" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
                                     <!--<img src="../images/aside-udacity-1.jpg">-->
                                 <!--</a>-->
