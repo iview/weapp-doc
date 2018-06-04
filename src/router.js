@@ -122,6 +122,13 @@ const routers = [
         component: (resolve) => require(['./views/components/notice-bar.vue'], resolve)
     },
     {
+        path: '/components/action-sheet',
+        meta: {
+            title: '动作面板 ActionSheet'
+        },
+        component: (resolve) => require(['./views/components/action-sheet.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }

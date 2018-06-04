@@ -27,8 +27,8 @@ icon 通告栏
 滚动 通告栏
 
 <i-notice-bar icon="systemprompt" loop>
-        2018年世界杯,将于6月14日至7月15日举行;2018年世界杯,将于6月14日至7月15日举行;
-    </i-notice-bar>
+    2018年世界杯,将于6月14日至7月15日举行;2018年世界杯,将于6月14日至7月15日举行;
+</i-notice-bar>
 `;
 
 export default code;

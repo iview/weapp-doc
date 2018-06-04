@@ -93,7 +93,7 @@ const list = {
             title: '操作反馈',
             list: [
                 {
-                    title: 'ActionSheet 行动按钮',
+                    title: 'ActionSheet 动作面板',
                     path: '/components/action-sheet'
                 },
                 {
