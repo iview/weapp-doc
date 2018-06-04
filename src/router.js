@@ -52,6 +52,13 @@ const routers = [
         component: (resolve) => require(['./views/components/list.vue'], resolve)
     },
     {
+        path: '/components/card',
+        meta: {
+            title: '卡片 Card'
+        },
+        component: (resolve) => require(['./views/components/card.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
