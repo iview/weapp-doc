@@ -380,7 +380,7 @@
                     </tbody>
                 </table>
             </div>
-            <Anchor title="示例" h2></Anchor>
+            <Anchor title="图标" h2></Anchor>
             <div class="icon-search">
                 <input
                         type="text"
