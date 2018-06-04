@@ -157,6 +157,13 @@ const routers = [
         component: (resolve) => require(['./views/components/spin.vue'], resolve)
     },
     {
+        path: '/components/badge',
+        meta: {
+            title: '徽标数 Badge'
+        },
+        component: (resolve) => require(['./views/components/badge.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
