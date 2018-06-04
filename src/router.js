@@ -101,6 +101,13 @@ const routers = [
         component: (resolve) => require(['./views/components/drawer.vue'], resolve)
     },
     {
+        path: '/components/page',
+        meta: {
+            title: '分页 Page'
+        },
+        component: (resolve) => require(['./views/components/page.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
