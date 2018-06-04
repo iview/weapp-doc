@@ -178,6 +178,13 @@ const routers = [
         component: (resolve) => require(['./views/components/tag.vue'], resolve)
     },
     {
+        path: '/components/progress',
+        meta: {
+            title: '进度条 Progress'
+        },
+        component: (resolve) => require(['./views/components/progress.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
