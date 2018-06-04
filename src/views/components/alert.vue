@@ -73,7 +73,7 @@
                     </tr>
                     </tbody>
                 </table>
-                <Anchor title="Cell slot" h3></Anchor>
+                <Anchor title="Alert slot" h3></Anchor>
                 <table>
                     <thead>
                     <tr>
