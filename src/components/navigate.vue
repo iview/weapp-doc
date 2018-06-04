@@ -21,7 +21,7 @@
                 </template>
             </Menu-item>
             <div class="navigate-group">组件</div>
-            <Menu-group v-for="item in navigate.components" :key="item.type" :title="item.type">
+            <Menu-group v-for="item in navigate.components" :key="item.type" :title="item.title">
                 <Menu-item v-for="component in item.list" :key="component.path" :name="component.path">
                     <template>
                         {{ component.title.split(' ')[0] }}
