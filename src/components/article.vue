@@ -22,8 +22,7 @@
                             <div class="catalogue" v-show="list.length">
                                 <card dis-hover>
                                     <div class="catalogue-title">
-                                        <template v-if="lang === 'zh-CN'">目录</template>
-                                        <template v-else>Catalogue</template>
+                                        <template>目录</template>
                                     </div>
                                     <div class="catalogue-content">
                                         <ul>
@@ -38,7 +37,7 @@
                                 </card>
                             </div>
 
-                            <template v-if="lang === 'zh-CN'">
+                            <template>
                                 <div style="margin-top: 20px"></div>
                                 <!--<a v-if="ad_index === 1" href="https://cn.udacity.com/course/intro-to-python-nanodegree-foundation&#45;&#45;nd000-cn-python/?utm_source=iviewui&utm_medium=banner&utm_campaign=python" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
                                     <!--<img src="../images/aside-udacity-1.jpg">-->
@@ -55,27 +54,27 @@
                                 <!--<a v-if="ad_index === 2" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
                                     <!--<img src="../images/aside-udacity-5.jpg">-->
                                 <!--</a>-->
-                                <a v-if="ad_index === 1" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-u-1.png">
-                                </a>
-                                <a v-if="ad_index === 2" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-u-2.png">
-                                </a>
-                                <a v-if="ad_index === 3" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-u-3.png">
-                                </a>
-                                <a v-if="ad_index === 4" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-u-4.png">
-                                </a>
-                                <a v-if="ad_index === 5" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-u-5.png">
-                                </a>
-                                <a v-if="ad_index === 6" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img src="../images/aside-udacity-5.jpg">
-                                </a>
-                                <a href="https://segmentfault.com/ls/1650000011074057" target="_blank" @click="handleAsideAd('aside-iview-live')" class="wrapper-aside">
-                                    <img src="../images/aside-iview-live.png">
-                                </a>
+                                <!--<a v-if="ad_index === 1" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
+                                    <!--<img src="../images/aside-u-1.png">-->
+                                <!--</a>-->
+                                <!--<a v-if="ad_index === 2" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
+                                    <!--<img src="../images/aside-u-2.png">-->
+                                <!--</a>-->
+                                <!--<a v-if="ad_index === 3" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
+                                    <!--<img src="../images/aside-u-3.png">-->
+                                <!--</a>-->
+                                <!--<a v-if="ad_index === 4" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
+                                    <!--<img src="../images/aside-u-4.png">-->
+                                <!--</a>-->
+                                <!--<a v-if="ad_index === 5" href="http://t.cn/R3dhfIj" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
+                                    <!--<img src="../images/aside-u-5.png">-->
+                                <!--</a>-->
+                                <!--<a v-if="ad_index === 6" href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
+                                    <!--<img src="../images/aside-udacity-5.jpg">-->
+                                <!--</a>-->
+                                <!--<a href="https://segmentfault.com/ls/1650000011074057" target="_blank" @click="handleAsideAd('aside-iview-live')" class="wrapper-aside">-->
+                                    <!--<img src="../images/aside-iview-live.png">-->
+                                <!--</a>-->
                                 <!--<a href="https://www.mysubmail.com/sms?from=iview" target="_blank" @click="handleAsideAd('aside-submail')" class="wrapper-aside wrapper-aside-no-padding">-->
                                     <!--<img src="../images/aside-submail3.jpg">-->
                                 <!--</a>-->
@@ -101,59 +100,53 @@
                                 <a href="https://github.com/iview/iview" target="_blank">iView</a>
                             </li>
                             <li>
-                                <a href="https://github.com/iview/iview-cli" target="_blank">iView Cli</a>
+                                <a href="https://github.com/TalkingData/iview-weapp" target="_blank">iView Weapp</a>
                             </li>
                             <li>
-                                <a href="https://github.com/iview/iview-admin" target="_blank">iView Admin</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/iview/iview-doc" target="_blank">iView Doc</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/iview/iview-project" target="_blank">iView Project</a>
+                                <a href="https://github.com/iview/weapp-doc" target="_blank">iView Weapp Doc</a>
                             </li>
                         </ul>
                     </i-col>
                     <i-col span="5">
                         <h4>
                             <Icon type="link"></Icon>
-                            {{ $t('index.links') }}
+                            相关站点
                         </h4>
                         <ul>
                             <li>
-                                <a href="https://www.talkingdata.com/" target="_blank">TalkingData</a> - {{ $t('index.td') }}
+                                <a href="https://www.talkingdata.com/" target="_blank">TalkingData</a> - 用数据的心智去超越
                             </li>
                             <li>
-                                <a href="http://mi.talkingdata.com/" target="_blank">Marketing Intelligence</a> - {{ $t('index.td_mi') }}
+                                <a href="http://mi.talkingdata.com/" target="_blank">Marketing Intelligence</a> - 免费公开大数据查询平台
                             </li>
                             <li>
-                                <a href="https://github.com/TalkingData/inmap/" target="_blank">inMap</a> - {{ $t('index.inmap') }}
+                                <a href="https://github.com/TalkingData/inmap/" target="_blank">inMap</a> - 大数据地理信息可视化框架
                             </li>
                             <li>
-                                <a href="https://github.com/TalkingData/Fregata" target="_blank">Fregata</a> - {{ $t('index.Fregata') }}
+                                <a href="https://github.com/TalkingData/Fregata" target="_blank">Fregata</a> - 大规模机器学习算法库
                             </li>
                             <li>
-                                <a href="https://github.com/TalkingData/Myna" target="_blank">Myna</a> - {{ $t('index.Myna') }}
+                                <a href="https://github.com/TalkingData/Myna" target="_blank">Myna</a> - Android 平台情景感知框架
                             </li>
                             <li>
-                                <a href="https://github.com/TalkingData/owl" target="_blank">OWL</a> - {{ $t('index.OWL') }}
+                                <a href="https://github.com/TalkingData/owl" target="_blank">OWL</a> - 分布式监控系统
                             </li>
                         </ul>
                     </i-col>
                     <i-col span="5" offset="2">
                         <h4>
                             <Icon type="chatbubbles"></Icon>
-                            {{ $t('index.community') }}
+                            社区
                         </h4>
                         <ul>
                             <li>
-                                <a href="https://github.com/iview/iview/issues" target="_blank">{{ $t('index.feedback') }}</a>
+                                <a href="https://github.com/TalkingData/weapp/issues" target="_blank">反馈建议</a>
                             </li>
                             <li>
-                                <a href="https://www.iviewui.com/new-issue" target="_blank">{{ $t('index.bug') }}</a>
+                                <a href="https://www.iviewui.com/new-issue" target="_blank">提交bug</a>
                             </li>
                             <li>
-                                <a href="https://gitter.im/iview/iview" target="_blank">{{ $t('index.chat') }}</a>
+                                <a href="https://gitter.im/iview/iview" target="_blank">在线讨论</a>
                             </li>
                             <li>
                                 <a href="https://segmentfault.com/t/iview" target="_blank">SegmentFault</a>
@@ -163,12 +156,7 @@
                     <i-col span="5" offset="2">
                         <div class="footer-aside">
                             <div class="footer-logo">
-                                <img src="../images/logo.png">
-                            </div>
-                            <div class="footer-author">
-                                <a href="https://www.talkingdata.com/">
-                                    <img src="../images/logo-td.png">
-                                </a>
+                                <img src="../images/logo-footer.png">
                             </div>
                             <!--<div class="footer-version">-->
                                 <!--<p>{{ $t('index.current_version') }}</p>-->
@@ -263,7 +251,6 @@
                 donate: false,
                 ask: false,
                 activeKey: '',
-                lang: this.$lang,
                 adCarousel: 0,
                 ad_index: this.app.ad_index
             }
@@ -321,9 +308,6 @@
                     this.ask = true;
                 }
             }
-        },
-        created () {
-            this.lang = this.$lang;
         },
         mounted () {
             this.updateActiveNav();

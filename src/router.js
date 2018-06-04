@@ -10,11 +10,11 @@ const routers = [
         component: (resolve) => require(['./views/index.vue'], resolve)
     },
     {
-        path: '/components/scroll-en',
+        path: '/docs/guide/start',
         meta: {
-            title: 'Scroll'
+            title: '快速上手'
         },
-        component: (resolve) => require(['./views/components/scroll-en.vue'], resolve)
+        component: (resolve) => require(['./views/guide/start.vue'], resolve)
     },
     {
         path: '*',

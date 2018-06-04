@@ -37,17 +37,17 @@
     <div>
         <pre :class="{bg: bg}"><code :class="language" ref="code"><slot></slot></code></pre>
         <span class="open-fiddle" v-if="title !== 'Code'" @click="openFiddle">
-            <Tooltip :content="$t('index.code_jsfiddle')" placement="top" transfer>
+            <Tooltip content="在 JSFiddle 中打开" placement="top" transfer>
                 <Icon type="code" size="18" />
             </Tooltip>
         </span>
         <span class="scale" @click="scale">
-            <Tooltip :content="$t('index.code_fullscreen')" placement="top" transfer>
+            <Tooltip content="放大" placement="top" transfer>
                 <Icon type="qr-scanner" size="18"></Icon>
             </Tooltip>
         </span>
         <span class="copy" @click="clip">
-            <Tooltip :content="$t('index.code_copy')" placement="top" transfer>
+            <Tooltip content="复制代码" placement="top" transfer>
                 <Icon type="clipboard" size="18" v-show="!copied"></Icon>
                 <Icon type="checkmark" size="18" v-show="copied" style="color:#5cb85c"></Icon>
             </Tooltip>
@@ -87,7 +87,6 @@
                 openScale: false,
                 code: '',
                 copied: false,
-                docLang: this.$lang,
                 title: 'Code'
             }
         },
@@ -126,11 +125,7 @@
                     e.clearSelection();
                     clipboard.destroy();
                     this.copied = true;
-                    if (this.docLang === 'zh-CN') {
-                        this.$Message.success('代码已复制到剪贴板');
-                    } else {
-                        this.$Message.success('Code copied');
-                    }
+                    this.$Message.success('代码已复制到剪贴板');
                     setTimeout(() => {
                         this.copied = false;
                     }, 2000);

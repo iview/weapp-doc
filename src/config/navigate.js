@@ -1,58 +1,11 @@
 // 定义左侧导航
 
 const list = {
-    guide: [
-        {
-            title: '介绍',
-            titleEn: 'Introduction',
-            path: '/docs/guide/introduce'
-        },
-        {
-            title: '设计原则',
-            titleEn: 'Design Principles',
-            path: '/docs/guide/design'
-        },
-        {
-            title: '布局',
-            titleEn: 'Navigation Examples',
-            path: '/docs/guide/layout'
-        },
-        {
-            title: '参与贡献',
-            titleEn: 'Contributing Guide',
-            path: '/docs/guide/standard'
-        }
-    ],
     beforeComponents: [
-        {
-            title: '安装',
-            titleEn: 'Installation',
-            path: '/docs/guide/install'
-        },
         {
             title: '快速上手',
             titleEn: 'Quick Start',
             path: '/docs/guide/start'
-        },
-        {
-            title: '国际化',
-            titleEn: 'Internationalization',
-            path: '/docs/guide/i18n'
-        },
-        {
-            title: '定制主题',
-            titleEn: 'Customize Theme',
-            path: '/docs/guide/theme'
-        },
-        {
-            title: 'iView Loader',
-            titleEn: 'iView Loader',
-            path: '/docs/guide/iview-loader'
-        },
-        {
-            title: '概览',
-            titleEn: 'Overview',
-            path: '/overview'
         },
         {
             title: '更新日志',
@@ -396,24 +349,6 @@ const list = {
                     icon: 'ios-more'
                 }
             ]
-        }
-    ],
-    practice: [
-        {
-            title: '实践案例',
-            titleEn: 'Practical Cases',
-            path: '/docs/practice/case'
-        },
-        {
-            title: 'iView Logo 设计思路',
-            titleEn: 'iView Logo Design',
-            path: '/docs/practice/logo'
-        }
-    ],
-    live: [
-        {
-            title: '最新课程',
-            path: '/live'
         }
     ]
 };

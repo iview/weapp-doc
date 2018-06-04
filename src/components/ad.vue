@@ -1,5 +1,5 @@
 <template>
-    <div v-if="lang === 'zh-CN'">
+    <div>
         <!--<div class="advertisement" id="API">-->
             <!--<row :gutter="32">-->
                 <!--<i-col span="12">-->
@@ -74,7 +74,6 @@
         components: { adSend },
         data () {
             return {
-                lang: this.$lang,
                 ad_index: 1  // 随机广告索引，更好地显示一类广告
             }
         },
@@ -87,7 +86,6 @@
             }
         },
         mounted () {
-            this.lang = this.$lang;
             // 随机广告索引
             this.ad_index = Math.floor(Math.random () * 2 + 1);
         }

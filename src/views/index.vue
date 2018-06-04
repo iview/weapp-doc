@@ -23,7 +23,7 @@
                         <div class="index-content">一套高质量的</div>
                         <div class="index-content">微信小程序 UI 组件库</div>
                         <div class="index-actions">
-                            <Button class="index-btn" size="large" type="primary" shape="circle">开始使用</Button>
+                            <Button class="index-btn" size="large" type="primary" shape="circle" @click="handleStart">开始使用</Button>
                             <Poptip title="使用微信扫描体验" trigger="hover">
                                 <Button class="index-btn" size="large" type="ghost" shape="circle">扫描体验</Button>
                                 <div slot="content">
@@ -41,6 +41,9 @@
 <script>
     export default {
         methods: {
+            handleStart () {
+                this.$router.push('/docs/guide/start');
+            },
             handleGitHub () {
                 window.open('https://github.com/TalkingData/iview-weapp');
             }

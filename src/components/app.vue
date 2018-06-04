@@ -58,7 +58,7 @@
                 this.liveVisible = true;
             }
 
-            if (this.liveVisible && this.$lang === 'zh-CN') {
+            if (this.liveVisible) {
 //                this.$Notice.config({
 //                    top: 85
 //                });
@@ -75,7 +75,7 @@
 //                this.$Notice.config({
 //                    top: 24
 //                });
-            } else if (this.liveVisible && this.$lang === 'en-US') {
+            } else if (this.liveVisible) {
 //                this.$Notice.config({
 //                    top: 85
 //                });
