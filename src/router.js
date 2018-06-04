@@ -164,6 +164,13 @@ const routers = [
         component: (resolve) => require(['./views/components/badge.vue'], resolve)
     },
     {
+        path: '/components/alert',
+        meta: {
+            title: '警告提示 Alert'
+        },
+        component: (resolve) => require(['./views/components/alert.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
