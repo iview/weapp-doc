@@ -220,6 +220,13 @@ const routers = [
         component: (resolve) => require(['./views/components/switch.vue'], resolve)
     },
     {
+        path: '/components/rate',
+        meta: {
+            title: '评分 Rate'
+        },
+        component: (resolve) => require(['./views/components/rate.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
