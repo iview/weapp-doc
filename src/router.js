@@ -192,6 +192,13 @@ const routers = [
         component: (resolve) => require(['./views/components/avatar.vue'], resolve)
     },
     {
+        path: '/components/input',
+        meta: {
+            title: '输入框 Input'
+        },
+        component: (resolve) => require(['./views/components/input.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
