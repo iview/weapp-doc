@@ -140,7 +140,7 @@
                         </h4>
                         <ul>
                             <li>
-                                <a href="https://github.com/TalkingData/weapp/issues" target="_blank">反馈建议</a>
+                                <a href="https://github.com/TalkingData/iview-weapp/issues" target="_blank">反馈建议</a>
                             </li>
                             <li>
                                 <a href="https://www.iviewui.com/new-issue" target="_blank">提交bug</a>

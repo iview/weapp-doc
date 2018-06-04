@@ -113,7 +113,7 @@
             },
             handleGoToGitHub () {
                 _hmt.push(['_trackEvent', 'menu-go-github', 'click']);
-                window.open('https://github.com/TalkingData/weapp');
+                window.open('https://github.com/TalkingData/iview-weapp');
             },
             handleGoToTwitter () {
                 _hmt.push(['_trackEvent', 'menu-go-twitter', 'click']);
