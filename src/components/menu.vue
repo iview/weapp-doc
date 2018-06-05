@@ -13,6 +13,7 @@
             <router-link to="/" class="wrapper-header-nav-logo">
                 <img src="../images/logo.png">
             </router-link>
+            <ApplicationMenu></ApplicationMenu>
             <div class="wrapper-header-nav-search">
                 <i-select
                     ref="select"
@@ -46,8 +47,10 @@
     import navigate from '../config/navigate';
     import Config from '../config/config';
     import bus from './bus';
+    import ApplicationMenu from './applications.vue';
 
     export default {
+        components: { ApplicationMenu },
         props: {
             activeKey: String
         },
