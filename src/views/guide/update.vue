@@ -25,6 +25,33 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
+                    <Anchor title="2.0.0" h2></Anchor>
+                    <p>
+                        <code>2018-07-28</code>
+                    </p>
+                    <h3>新增组件</h3>
+                    <ul>
+                        <li>新增倒计时组件 <code>CountDown</code>。</li>
+                        <li>新增滑动菜单组件 <code>Swipeout</code>。</li>
+                        <li>新增索引选择器组件 <code>Index</code>。</li>
+                        <li>新增分隔符组件 <code>Divider</code>。</li>
+                        <li>新增吸顶容器组件 <code>Sticky</code>。</li>
+                        <li>新增页底提示组件 <code>LoadMore</code>。</li>
+                        <li>新增折叠面板组件 <code>Collapse</code>。</li>
+                    </ul>
+                    <h3>新特性 & 优化</h3>
+                    <ul>
+                        <li>Icon 新增自定义图标属性 <code>custom</code>。</li>
+                        <li>Button 新增方法 <code>bindcontact</code>、<code>bindgetuserinfo</code>、<code>bindgetphonenumber</code>、<code>binderror</code>。</li>
+                        <li>Button 新增行内元素属性 <code>inline</code>。</li>
+                        <li>Button 增加了按下的交互效果。</li>
+                        <li>Drawer 的遮罩层也支持过渡动画了。</li>
+                        <li>NoticeBar 新增属性 <code>background-color</code>、<code>color</code>、<code>speed</code>。<issue id="25"></issue></li>
+                        <li>TabBar 新增自定义图片属性 <code>img</code> 和 <code>current-img</code>。</li>
+                        <li>TabBar 点击区域增大，更容易点击了。</li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
                     <Anchor title="1.1.0" h2></Anchor>
                     <p>
                         <code>2018-06-05</code>
