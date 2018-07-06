@@ -234,6 +234,13 @@ const routers = [
         component: (resolve) => require(['./views/components/input-number.vue'], resolve)
     },
     {
+        path: '/components/count-down',
+        meta: {
+            title: '倒计时 CountDown'
+        },
+        component: (resolve) => require(['./views/components/count-down.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }

@@ -99,6 +99,18 @@
                         <td>-</td>
                     </tr>
                     <tr>
+                        <td>img</td>
+                        <td>自定义图片 url</td>
+                        <td>String</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>current-img</td>
+                        <td>当前面板被选中时的自定义图片 url</td>
+                        <td>String</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
                         <td>key</td>
                         <td>标签的唯一标识</td>
                         <td>String</td>

@@ -37,6 +37,12 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>inline</td>
+                            <td>是否为行内元素，开启后宽度为自适应</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
                             <td>size</td>
                             <td>按钮大小，可选值为 large、small、default 或者不设置</td>
                             <td>String</td>
@@ -135,6 +141,26 @@
                     <tr>
                         <td>bind:click</td>
                         <td>按钮在可用状态被点击时触发</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>bind:getuserinfo</td>
+                        <td>用户点击该按钮时，会返回获取到的用户信息，从返回参数的detail中获取到的值同wx.getUserInfo</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>bind:contact</td>
+                        <td>客服消息回调</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>bind:getphonenumber</td>
+                        <td>获取用户手机号回调</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>bind:error</td>
+                        <td>当使用开放能力时，发生错误的回调</td>
                         <td>-</td>
                     </tr>
                     </tbody>

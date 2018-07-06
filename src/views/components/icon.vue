@@ -377,6 +377,12 @@
                         <td>String</td>
                         <td>-</td>
                     </tr>
+                    <tr>
+                        <td>custom</td>
+                        <td>自定义图标</td>
+                        <td>String</td>
+                        <td>-</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>

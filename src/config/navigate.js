@@ -138,6 +138,10 @@ const list = {
                     title: 'Avatar 头像',
                     path: '/components/avatar'
                 },
+                {
+                    title: 'CountDown 倒计时',
+                    path: '/components/count-down'
+                },
             ]
         },
         {
