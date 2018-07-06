@@ -112,6 +112,10 @@ const list = {
                     title: 'Spin 加载中',
                     path: '/components/spin'
                 },
+                {
+                    title: 'Swipeout 滑动菜单',
+                    path: '/components/swipeout'
+                },
             ]
         },
         {

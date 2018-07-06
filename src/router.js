@@ -241,6 +241,13 @@ const routers = [
         component: (resolve) => require(['./views/components/count-down.vue'], resolve)
     },
     {
+        path: '/components/swipeout',
+        meta: {
+            title: '滑动菜单 Swipeout'
+        },
+        component: (resolve) => require(['./views/components/swipeout.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
