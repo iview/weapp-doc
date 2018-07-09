@@ -269,6 +269,13 @@ const routers = [
         component: (resolve) => require(['./views/components/sticky.vue'], resolve)
     },
     {
+        path: '/components/load-more',
+        meta: {
+            title: '页底提示 LoadMore'
+        },
+        component: (resolve) => require(['./views/components/load-more.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }

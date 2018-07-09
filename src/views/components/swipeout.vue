@@ -2,6 +2,8 @@
     <i-article>
         <article>
             <h1>Swipeout 滑动菜单</h1>
+            <Anchor title="概述" h2></Anchor>
+            <p>与 iOS 原生的滑动操作交互类似，可通过滑动显示操作菜单。</p>
             <Anchor title="使用指南" h2></Anchor>
             <p>在 .json 中引入组件</p>
             <i-code bg lang="json">{{ code.import }}</i-code>

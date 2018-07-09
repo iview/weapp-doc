@@ -3,6 +3,8 @@
         <article>
             <h1>Divider 分隔符</h1>
             <Anchor title="概述" h2></Anchor>
+            <p>区隔内容的分割线。</p>
+            <p>对不同章节的文本段落进行分割。</p>
             <Anchor title="使用指南" h2></Anchor>
             <p>在 .json 中引入组件</p>
             <i-code bg lang="json">{{ code.import }}</i-code>

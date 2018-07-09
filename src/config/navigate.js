@@ -158,6 +158,10 @@ const list = {
                     title: 'Divider 分隔符',
                     path: '/components/divider'
                 },
+                {
+                    title: 'LoadMore 页底提示',
+                    path: '/components/load-more'
+                },
             ]
         },
         {
