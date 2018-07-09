@@ -255,6 +255,13 @@ const routers = [
         component: (resolve) => require(['./views/components/index.vue'], resolve)
     },
     {
+        path: '/components/divider',
+        meta: {
+            title: '分隔符 Divider'
+        },
+        component: (resolve) => require(['./views/components/divider.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }

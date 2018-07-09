@@ -150,6 +150,10 @@ const list = {
                     title: 'CountDown 倒计时',
                     path: '/components/count-down'
                 },
+                {
+                    title: 'Divider 分隔符',
+                    path: '/components/divider'
+                },
             ]
         },
         {
