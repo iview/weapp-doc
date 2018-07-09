@@ -90,6 +90,10 @@ const list = {
                     title: 'Index 索引选择器',
                     path: '/components/index'
                 },
+                {
+                    title: 'Sticky 吸顶容器',
+                    path: '/components/sticky'
+                },
             ]
         },
         {

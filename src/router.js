@@ -262,6 +262,13 @@ const routers = [
         component: (resolve) => require(['./views/components/divider.vue'], resolve)
     },
     {
+        path: '/components/sticky',
+        meta: {
+            title: '吸顶容器 Sticky'
+        },
+        component: (resolve) => require(['./views/components/sticky.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
