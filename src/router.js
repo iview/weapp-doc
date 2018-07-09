@@ -276,6 +276,13 @@ const routers = [
         component: (resolve) => require(['./views/components/load-more.vue'], resolve)
     },
     {
+        path: '/components/collapse',
+        meta: {
+            title: '折叠面板 Collapse'
+        },
+        component: (resolve) => require(['./views/components/collapse.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }

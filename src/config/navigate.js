@@ -151,6 +151,10 @@ const list = {
                     path: '/components/avatar'
                 },
                 {
+                    title: 'Collapse 折叠面板',
+                    path: '/components/collapse'
+                },
+                {
                     title: 'CountDown 倒计时',
                     path: '/components/count-down'
                 },
