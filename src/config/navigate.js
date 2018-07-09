@@ -86,6 +86,10 @@ const list = {
                     title: 'NoticeBar 通告栏',
                     path: '/components/notice-bar'
                 },
+                {
+                    title: 'Index 索引选择器',
+                    path: '/components/index'
+                },
             ]
         },
         {

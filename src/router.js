@@ -248,6 +248,13 @@ const routers = [
         component: (resolve) => require(['./views/components/swipeout.vue'], resolve)
     },
     {
+        path: '/components/index',
+        meta: {
+            title: '索引选择器 Index'
+        },
+        component: (resolve) => require(['./views/components/index.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
