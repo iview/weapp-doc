@@ -8,7 +8,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var fs = require('fs');
 
-config.output.publicPath = 'https://file.iviewui.com/weapp/dist/';
+config.output.publicPath = 'http://inmap.talkingdata.com/wx/';
 // config.output.publicPath = '/dist/';
 config.output.filename = '[name].[hash].js';                 // 带hash值的入口js名称
 config.output.chunkFilename = '[name].[hash].chunk.js';      // 带hash值的路由js名称
@@ -35,7 +35,7 @@ config.plugins = (config.plugins || []).concat([
         }
     }),
     new HtmlWebpackPlugin({
-        filename: '../index_prod.html',
+        filename: '../dist/index_prod.html',
         template: './src/template/index.ejs',
         inject: false
     })
@@ -44,7 +44,7 @@ config.plugins = (config.plugins || []).concat([
 // 写入环境变量
 fs.open('./src/config/env.js', 'w', function (err, fd) {
     var buf = 'export default "production";';
-    fs.write(fd,buf,0,buf.length,0,function(err,written,buffer){});
+    fs.write(fd, buf, 0, 'utf-8', function (err, written, buffer) {});
 });
 
 module.exports = config;

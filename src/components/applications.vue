@@ -73,9 +73,9 @@
         methods: {
             handleChange (name) {
                 if (name === 'iview') {
-                    window.location.href = 'https://www.iviewui.com';
+                    window.location.href = 'https://iview.talkingdata.com';
                 } else if (name === 'iview-weapp') {
-                    window.location.href = 'https://weapp.iviewui.com';
+                    window.location.href = 'https://inmap.talkingdata.com/wx/index_prod.html';
                 } else if (name === 'inmap') {
                     window.location.href = 'http://inmap.talkingdata.com';
                 }

@@ -44,7 +44,7 @@ config.plugins = (config.plugins || []).concat([
 // 写入环境变量
 fs.open('./src/config/env.js', 'w', function (err, fd) {
     var buf = 'export default "local";';
-    fs.write(fd,buf,0,buf.length,0,function(err,written,buffer){});
+    fs.write(fd, buf, 0, 'utf-8', function (err, written, buffer) {});
 });
 
 module.exports = config;

@@ -44,7 +44,7 @@ router.afterEach((to, from, next) => {
     bus.loading = false;
     window.scrollTo(0, 0);
     if (_hmt) {
-        _hmt.push(['_trackEvent', 'page', to.path]);
+        // _hmt.push(['_trackEvent', 'page', to.path]);
     }
 });
 
