@@ -57,7 +57,7 @@
                     </tr>
                     </tbody>
                 </table>
-                <Anchor title="CheckboxGroup properties" h3></Anchor>
+                <Anchor title="Checkbox properties" h3></Anchor>
                 <table>
                     <thead>
                     <tr>
@@ -106,7 +106,7 @@
                     </tr>
                     </tbody>
                 </table>
-                <Anchor title="CheckboxGroup events" h3></Anchor>
+                <Anchor title="Checkbox events" h3></Anchor>
                 <table>
                     <thead>
                     <tr>
