@@ -16,7 +16,7 @@
   "author": "Aresn",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.21.1",
     "clipboard": "^1.7.1",
     "highlightjs": "^8.7.0",
     "ityped": "0.0.6",
